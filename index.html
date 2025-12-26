@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Merry Christmas!</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="main.css" />
+        <noscript><link rel="stylesheet" href="noscript.css" /></noscript>
+		<style>
+    .snowflake {
+        position: fixed;
+        top: -10px;
+        color: white;
+        font-size: 1rem;
+        opacity: 0.8;
+        pointer-events: none;
+        user-select: none;
+        animation: fall linear infinite;
+        z-index: 1;
+    }
+
+    @keyframes fall {
+        0% { transform: translateY(0) rotate(0deg); }
+        100% { transform: translateY(110vh) rotate(360deg); }
+    }
+</style>
+
+    </head>
+    <body class="is-preload">
+
+        <!-- Sidebar -->
+        <section id="sidebar">
+            <div class="inner">
+                <nav>
+                    <ul>
+                        <li><a href="#intro">Intro</a></li>
+                        <li><a href="#one">Why I Appreciate You</a></li>
+                        <li><a href="#two">Things I Admire About You</a></li>
+                        <li><a href="#three">Outro</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Intro -->
+            <section id="intro" class="wrapper style1 fullscreen fade-up">
+                <div class="inner">
+                    <h1 class="tytul">Merry Christmas!</h1>
+                    <p class="podtytul">
+                        This little corner of the internet is something I wanted to make just for you.  A small Christmas gift that isn’t about anything big or dramatic, just something thoughtful, warm, and personal. You’ve had a real impact on my life in ways you probably don’t even realize, and I wanted to put that into something creative instead of just saying it once and letting it fade. So this site is a collection of thoughts and things I appreciate about you, wrapped up in a way that feels a little magical and a little fun. I hope it makes you smile.
+                    </p>
+                    <ul class="actions">
+                        <li><a href="#one" class="button scrolly">Read More</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- One -->
+            <section id="one" class="wrapper style2 spotlights">
+                <section>
+                    <a href="#" class="image"><img src="pic01.jpeg" alt="" data-position="center center" /></a>
+                    <div class="content">
+                        <div class="inner">
+                            <h2>Why I Appreciate You</h2>
+                            <p>
+                                There are so many things I appreciate about you, and most of them come from your genuine kindness. You always put others before yourself, and you never hesitate to help out. Those are the qualities of an awesome person. I appreciate that I can talk to you whenever I need to, and you do not judge. Even the quick conversations we had have stuck with me more than you realize.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Two -->
+            <section id="two" class="wrapper style3 fade-up">
+                <div class="inner">
+                    <h2>Things I Admire About You</h2>
+                    <div class="features">
+                        <section>
+                            <p>Your ability to stay grounded even when things get stressful</p>
+                            <p>The kindness you show daily</p>
+                            <p>The way you make people feel at ease</p>
+                            <p>Your honesty and the way you communicate with clarity and sincerity</p>
+                            <p>The way you care about the people around you</p>
+                            <p>Your strength, even when you don’t give yourself enough credit</p>
+                            <p>Your creativity and the way you bring your own style into everything you do</p>
+							<p>Your willingness to always help out</p>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Three -->
+            <section id="three" class="wrapper style1 fade-up">
+                <div class="inner">
+                    <h2>Outro</h2>
+                    <p>
+                        I wanted this little project to be something that feels warm and personal, something that reflects even a 
+                        fraction of the impact you’ve had on me. You’ve brought a lot of light into my life this year, and I’m grateful 
+                        for every moment we’ve shared — the conversations, the laughs, the honesty, all of it. You deserve good things, 
+                        and I hope this small gift brings you even a little bit of the joy you’ve given me.
+                    </p>
+
+                    <p><strong>Thank you</strong> for being you. Genuinely, effortlessly, and without trying to be anything else.</p>
+
+                    <p><strong>Merry Christmas, Grace.</strong>  
+                    I hope this season brings you peace, warmth, and moments that make you smile.</p>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="jquery.min.js"></script>
+        <script src="jquery.scrollex.min.js"></script>
+        <script src="jquery.scrolly.min.js"></script>
+        <script src="browser.min.js"></script>
+        <script src="breakpoints.min.js"></script>
+        <script src="util.js"></script>
+        <script src="main.js"></script>
+		<script>
+    function createSnowflake() {
+        const snowflake = document.createElement("div");
+        snowflake.classList.add("snowflake");
+        snowflake.textContent = "❄";
+        snowflake.style.left = Math.random() * 100 + "vw";
+        snowflake.style.animationDuration = (Math.random() * 3 + 2) + "s";
+        snowflake.style.fontSize = (Math.random() * 10 + 10) + "px";
+        document.body.appendChild(snowflake);
+
+        setTimeout(() => snowflake.remove(), 5000);
+    }
+
+    setInterval(createSnowflake, 150);
+</script>
+
+
+    </body>
+</html>
